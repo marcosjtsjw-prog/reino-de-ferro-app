@@ -203,6 +203,63 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
   .caixa{width:min(760px,100%)}
   .pfnome{max-width:none}
 }
+
+.arena{position:relative;border-radius:16px;padding:8px 6px;margin:6px 0 8px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 50%,#3a2418 0%,#1a1414 45%,#07080c 100%);border:1px solid #f2b70544;box-shadow:inset 0 0 40px #000c}
+.arena::before{content:'';position:absolute;inset:auto 0 0 0;height:46%;background:repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 38px),linear-gradient(180deg,transparent,#0006);pointer-events:none}
+.arena .time{position:relative;gap:4px}
+.arena .lt{position:relative;background:linear-gradient(180deg,#ffffff08,#0000);border:1px solid #ffffff14;border-radius:12px;padding:4px 2px 5px;overflow:visible}
+.arena .lt b{font-size:12px;color:#f3efe6}.arena .lt small{font-size:11px}.arena .lt .int{color:#ffd36b;font-size:11px}
+.ltfig{width:100%;max-width:78px;margin:0 auto;filter:drop-shadow(0 4px 6px #000a)}.ltfig svg{width:100%;height:auto;display:block}
+.hpbar{position:relative;width:92%;height:8px;border-radius:5px;background:#0b0d12;border:1px solid #ffffff22;overflow:hidden;margin:3px 0 1px}
+.hpbar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+.hpbar .fant{background:#ffd36b;animation:fant .6s .15s ease-out forwards;width:var(--de)}
+@keyframes fant{to{width:var(--ate)}}
+.log{position:relative;height:auto;min-height:62px;border:0;padding:6px 40px 6px 8px;margin:6px 0;background:#0009;border-radius:10px;border:1px solid #ffffff12;font-size:13px}
+.log p:first-child{color:#ffd36b}
+.vs{position:absolute;right:8px;top:4px;font-family:Cinzel,Georgia,serif;font-weight:800;color:#f2b70566;font-size:18px}
+.lt.ator{border-color:#f2b705;box-shadow:0 0 0 2px #f2b70566,0 0 22px #f2b70544;z-index:2}
+.lt.ator.her{animation:avancaCima .42s ease-out}.lt.ator.ini{animation:avancaBaixo .42s ease-out}
+@keyframes avancaCima{40%{transform:translateY(-14px) scale(1.06)}100%{transform:none}}
+@keyframes avancaBaixo{40%{transform:translateY(14px) scale(1.06)}100%{transform:none}}
+.lt.ator.sup{box-shadow:0 0 0 3px #fff,0 0 34px #ffd36b}
+.lt.atingido .ltfig{animation:treme .35s linear}
+@keyframes treme{20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+.lt.atingido::after{content:'';position:absolute;inset:0;border-radius:12px;background:#e0352b;opacity:0;animation:clarao .35s ease-out;pointer-events:none}
+.lt.curado::after{content:'';position:absolute;inset:0;border-radius:12px;background:#3ddc6a;opacity:0;animation:clarao .5s ease-out;pointer-events:none}
+@keyframes clarao{0%{opacity:.45}100%{opacity:0}}
+.lt.cai .ltfig{animation:cai .5s ease-in forwards}@keyframes cai{to{transform:translateY(10px) rotate(-12deg);opacity:.35}}
+.lt.morto .ltfig{filter:grayscale(1) brightness(.5)}
+.dmg{position:absolute;left:50%;top:28%;transform:translateX(-50%);z-index:5;font-weight:900;font-size:20px;color:#fff;text-shadow:0 2px 0 #8e1b14,0 0 10px #e0352b;animation:sobeDano .9s ease-out forwards;pointer-events:none;white-space:nowrap}
+.dmg.crit{font-size:27px;color:#ffd36b;text-shadow:0 2px 0 #7a3b00,0 0 14px #ff7a1a}
+.dmg.cura{color:#bfffd2;text-shadow:0 2px 0 #0d5a2a,0 0 10px #3ddc6a}
+@keyframes sobeDano{0%{opacity:0;transform:translate(-50%,8px) scale(.6)}20%{opacity:1;transform:translate(-50%,-4px) scale(1.15)}100%{opacity:0;transform:translate(-50%,-34px) scale(1)}}
+.fx{position:absolute;left:50%;top:34%;width:90px;height:90px;margin:-45px 0 0 -45px;border-radius:50%;z-index:4;pointer-events:none;animation:explode .5s ease-out forwards}
+.fx-termico{background:radial-gradient(circle,#fff6c8 0%,#ff9a2a 30%,#e0352b 55%,transparent 70%)}
+.fx-hidraulico{background:radial-gradient(circle,#ffffff 0%,#6fd3ff 30%,#1f6fd1 55%,transparent 70%)}
+.fx-pneumatico{background:radial-gradient(circle,transparent 30%,#e8fbff 38%,transparent 46%,#9fe3ff 56%,transparent 66%)}
+.fx-estrutural{background:conic-gradient(from 20deg,#c9a36b 0 10%,transparent 0 20%,#8a6a45 0 30%,transparent 0 40%,#c9a36b 0 50%,transparent 0 60%,#8a6a45 0 70%,transparent 0 80%,#c9a36b 0 90%,transparent 0);-webkit-mask:radial-gradient(circle,transparent 25%,#000 30%,#000 60%,transparent 66%);mask:radial-gradient(circle,transparent 25%,#000 30%,#000 60%,transparent 66%)}
+@keyframes explode{0%{transform:scale(.2);opacity:1}70%{opacity:.9}100%{transform:scale(1.25);opacity:0}}
+.supflash{animation:tremeTela .45s linear}
+.supflash::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;animation:clarao .6s ease-out;z-index:6}
+.supflash.sys-termico::after{background:radial-gradient(circle,#ffb04a,#e0352b88)}.supflash.sys-hidraulico::after{background:radial-gradient(circle,#bfeaff,#1f6fd188)}
+.supflash.sys-pneumatico::after{background:radial-gradient(circle,#ffffff,#9fe3ff88)}.supflash.sys-estrutural::after{background:radial-gradient(circle,#ffe2a8,#8a6a4588)}
+@keyframes tremeTela{15%{transform:translate(-6px,3px)}30%{transform:translate(6px,-3px)}45%{transform:translate(-4px,-2px)}60%{transform:translate(4px,2px)}80%{transform:translate(-2px,1px)}}
+.banner{position:absolute;left:0;right:0;top:38%;z-index:8;text-align:center;font-family:Cinzel,Georgia,serif;font-weight:800;font-size:44px;letter-spacing:4px;pointer-events:none;animation:banner 1.2s cubic-bezier(.2,1.4,.4,1) both}
+.banner.vit{color:#ffd36b;text-shadow:0 4px 0 #7a3b00,0 0 30px #f2b705}.banner.der{color:#ff8a80;text-shadow:0 4px 0 #5a0d08,0 0 24px #e0352b}
+@keyframes banner{0%{transform:scale(2.4);opacity:0}60%{opacity:1}100%{transform:scale(1);opacity:1}}
+
+.ffig svg,.cenafig svg,.gtile .gfig svg{animation:respira 3.2s ease-in-out infinite;transform-origin:50% 95%}
+@keyframes respira{50%{transform:scaleY(1.018) translateY(-1px)}}
+.ffig{position:relative}.ffig::before{content:'';position:absolute;inset:8% 6% 2%;border-radius:50%;background:radial-gradient(circle,var(--aura,#f2b70555),transparent 65%);animation:aura 3s ease-in-out infinite;z-index:0}
+.ffig svg{position:relative;z-index:1}
+@keyframes aura{50%{transform:scale(1.08);opacity:.7}}
+.ficha{background:radial-gradient(ellipse at 50% 30%,#2b2230,#11141c 70%);border:1px solid #f2b70566;animation:fichaIn .45s ease-out}
+@keyframes fichaIn{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.cenafig svg{animation:entraLiana .7s cubic-bezier(.2,1.2,.4,1) both,respira 3.2s .7s ease-in-out infinite}
+@keyframes entraLiana{from{opacity:0;transform:translateX(-30px) scale(.94)}to{opacity:1;transform:none}}
+.gtile{transition:transform .15s}.gtile:active{transform:scale(.96)}
+@media (prefers-reduced-motion:reduce){.lt.ator,.lt.atingido .ltfig,.dmg,.fx,.supflash,.banner,.ffig svg,.cenafig svg,.gtile .gfig svg,.ffig::before,.ficha,.hpbar .fant{animation:none!important}}
 </style></style>
 </head>
 <body>
@@ -212,7 +269,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v14 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v15 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="editarCmd" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -225,6 +282,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.321608f2.js"></script>
+<script src="jogo.bc611e04.js"></script>
 </body>
 </html>
