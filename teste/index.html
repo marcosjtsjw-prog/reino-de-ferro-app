@@ -300,6 +300,17 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .balanca{animation:balanca 3s ease-in-out infinite}@keyframes balanca{50%{transform:rotate(4deg)}}
 .guindaste{animation:guind 5s ease-in-out infinite}@keyframes guind{50%{transform:rotate(-12deg)}}
 @media (prefers-reduced-motion:reduce){.farol,.orbe,.moeda,.acende,.nota,.marcha,.pulsa,.pula,.balanca,.guindaste,.pup{animation:none}.acende,.nota{opacity:0}}
+
+
+.visao{display:flex;flex-wrap:wrap;gap:6px;justify-content:space-between;align-items:center}
+.vbts{display:flex;gap:6px}
+.chipclima{font-size:12px;color:#cfd8e8;background:#0b0e15;border:1px solid #33405a;border-radius:14px;padding:3px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.nuvem{animation:nuvem 80s linear infinite}@keyframes nuvem{from{transform:translateX(-160px)}to{transform:translateX(160px)}}
+.chuva line{animation:chuva .55s linear infinite}@keyframes chuva{from{transform:translate(0,-30px)}to{transform:translate(-9px,30px)}}
+.neve circle{animation:neve 6s linear infinite}@keyframes neve{from{transform:translate(0,-40px)}to{transform:translate(14px,40px)}}
+.raio{opacity:0;animation:raio 7s infinite}@keyframes raio{0%,90%,94%,100%{opacity:0}91%{opacity:.7}93%{opacity:.3}95%{opacity:.6}}
+.cidsvg{width:max(100%,1080px)}
+@media (prefers-reduced-motion:reduce){.nuvem,.chuva line,.neve circle,.raio{animation:none}}
 </style></style>
 </head>
 <body>
@@ -309,7 +320,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v16 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v17 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -322,6 +333,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.b7fe0d57.js"></script>
+<script src="jogo.69475351.js"></script>
 </body>
 </html>
