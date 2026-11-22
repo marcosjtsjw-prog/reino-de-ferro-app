@@ -343,6 +343,39 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .galcmd button.on{opacity:1;outline:3px solid #f2b705;outline-offset:2px}
 .galcmd svg{width:100%;height:100%;display:block}
 .av svg{width:100%;height:100%}
+
+.sub.scroll{align-items:stretch;padding:2px 2px 10px;margin-bottom:6px;scrollbar-width:thin;scrollbar-color:#f2b70566 transparent;overscroll-behavior-x:contain}
+.sub.scroll::-webkit-scrollbar{height:4px}.sub.scroll::-webkit-scrollbar-thumb{background:#f2b70566;border-radius:4px}
+.sub.scroll button{white-space:nowrap;height:auto;line-height:1.2}
+#caixa{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+#predio .botoes{background:linear-gradient(to bottom,transparent,var(--card,#141922) 14px)!important;padding:18px 0 8px!important;margin-top:4px}
+
+.sedel{grid-template-columns:62px minmax(0,1fr) auto!important}
+.sedeic{width:62px;height:56px;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(ellipse at 50% 85%,#f2b70522,transparent 70%);border-radius:10px}
+.sedeic img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px #0009)}
+.sedeic svg{width:100%;height:100%;border-radius:8px}
+
+.rlista{display:flex;flex-direction:column;gap:6px}
+.rlin{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:8px;align-items:center;text-align:left;width:100%;min-height:0;padding:8px 10px;border-radius:12px;background:#141922;border:1px solid #2a3142;border-left:4px solid var(--ok);color:var(--ink);font-weight:400}
+.rlin.ruim{border-left-color:var(--verm)}
+.rico{font-size:22px;text-align:center}
+.rtx b{display:block;font-size:14px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtx small{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rdt{font-size:11px;color:var(--mute);text-align:right;display:flex;align-items:center;gap:6px}.rdt i{font-style:normal;font-size:20px;color:#f2b705}
+.rcena{display:block;width:100%;height:auto;border-radius:14px;margin:8px 0;border:1px solid #f2b70544}
+.rel h3{margin:0 0 6px;font-size:15px}
+.gbar{display:grid;grid-template-columns:118px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:12px;margin:5px 0}
+.gbar>span{color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gbar>i{display:block;height:12px;border-radius:6px;min-width:3px}
+.gbar>b{font-size:13px}
+.gtr{display:flex!important;background:#232a38;overflow:hidden}.gtr u{background:#3ddc6a;display:block}.gtr s{background:#e04545;display:block}
+.gpilha{display:flex;height:16px;border-radius:8px;overflow:hidden;gap:2px}.gpilha i{display:block}
+.gleg{display:flex;flex-direction:column;gap:3px;margin-top:6px;font-size:12px}
+.gleg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.gleg em{font-style:normal;color:var(--mute)}.gleg em.mal{color:#ff8a7a}.gleg em.bem{color:#3ddc6a}
+.rsqs{display:flex;flex-wrap:wrap;gap:8px}.rsq{display:inline-flex;align-items:center;gap:4px;background:#1e3a26;border-radius:10px;padding:4px 8px;font-weight:800;font-size:14px}.rsq.ruim{background:#3a1e1e}
+.rmot{margin:0;padding-left:18px;font-size:14px;line-height:1.45}.rmot li{margin:3px 0}
+.rdica{border-color:#f2b705!important;background:linear-gradient(#2a2310,#141922)!important}
 </style></style>
 </head>
 <body>
@@ -352,7 +385,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v22 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v23 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -365,6 +398,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.0096c686.js"></script>
+<script src="jogo.f04327be.js"></script>
 </body>
 </html>
