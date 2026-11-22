@@ -376,6 +376,33 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .rsqs{display:flex;flex-wrap:wrap;gap:8px}.rsq{display:inline-flex;align-items:center;gap:4px;background:#1e3a26;border-radius:10px;padding:4px 8px;font-weight:800;font-size:14px}.rsq.ruim{background:#3a1e1e}
 .rmot{margin:0;padding-left:18px;font-size:14px;line-height:1.45}.rmot li{margin:3px 0}
 .rdica{border-color:#f2b705!important;background:linear-gradient(#2a2310,#141922)!important}
+
+.tpasso{display:block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#f2b705;opacity:.85}
+.tdica{font-size:13px;margin:3px 0 2px;color:#e9eef8}
+#abas button.guiaTar{position:relative;color:#f2b705!important}
+#abas button.guiaTar::after{content:'';position:absolute;top:6px;right:14%;width:9px;height:9px;border-radius:50%;background:#f2b705;box-shadow:0 0 0 0 #f2b705aa;animation:pulsoTar 1.4s infinite}
+@keyframes pulsoTar{0%{box-shadow:0 0 0 0 #f2b705aa}100%{box-shadow:0 0 0 10px #f2b70500}}
+
+.arena2{padding:8px 6px 6px;background:linear-gradient(#0b0f18cc,#0b0f18ee),var(--fundoArena,radial-gradient(ellipse at 50% 40%,#3a2a18,#0b0f18 70%)) center/cover no-repeat!important}
+.arena2.comfundo{background:linear-gradient(#0b0f1866,#0b0f1899),url(arte/arena.webp) center 62%/cover no-repeat!important}
+.arena2.comfundo .lt{background:#0b0f18c4;backdrop-filter:blur(2px)}
+.lados{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:4px;align-items:start;position:relative}
+.lado{display:flex;flex-direction:column;gap:5px}
+.ladot{font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:2px 0;border-radius:8px}
+.lado.her .ladot{color:#9fd4ff;background:#1f3a5c88}.lado.ini .ladot{color:#ffb0a0;background:#5c1f1f88}
+.vs2{align-self:center;font:900 20px/1 var(--fonteTitulo,serif);color:#f2b705;text-shadow:0 0 12px #f2b70588,0 2px 0 #000;text-align:center;margin-top:30px}
+.arena2 .lt{display:grid;grid-template-columns:52px minmax(0,1fr);grid-template-rows:auto auto auto auto;column-gap:6px;align-items:center;text-align:left;padding:4px 6px}
+.arena2 .lt .ltfig{grid-row:1/5;max-width:52px;height:64px;display:flex;align-items:flex-end}
+.arena2 .lt .ltfig svg{height:100%;width:auto;max-width:100%;margin:0 auto}
+.arena2 .lt b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arena2 .lt .hpbar{margin:2px 0}
+.arena2 .lado.her .lt{border-left:3px solid #4a90d9}.arena2 .lado.ini .lt{border-right:3px solid #e04545}
+.arena2 .lado.ini .lt{grid-template-columns:minmax(0,1fr) 52px;text-align:right}
+.arena2 .lado.ini .lt .ltfig{grid-column:2;grid-row:1/5}
+.arena2 .lado.ini .lt>b,.arena2 .lado.ini .lt>small,.arena2 .lado.ini .lt>.hpbar{grid-column:1}
+.arena2 .lt .dmg{left:auto;right:6px}
+.arena2 .log{margin-top:8px;min-height:62px;background:#0b0f18d9;border:1px solid #f2b70544;border-radius:12px;padding:6px 10px}
+@media(min-width:700px){.arena2 .lt{grid-template-columns:80px minmax(0,1fr)}.arena2 .lado.ini .lt{grid-template-columns:minmax(0,1fr) 80px}.arena2 .lt .ltfig{max-width:80px;height:96px}.lados{grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr)}.vs2{font-size:34px}}
 </style></style>
 </head>
 <body>
@@ -385,7 +412,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v23 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v24 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -398,6 +425,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.f04327be.js"></script>
+<script src="jogo.1cd60949.js"></script>
 </body>
 </html>
