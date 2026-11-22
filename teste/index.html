@@ -376,6 +376,12 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .rsqs{display:flex;flex-wrap:wrap;gap:8px}.rsq{display:inline-flex;align-items:center;gap:4px;background:#1e3a26;border-radius:10px;padding:4px 8px;font-weight:800;font-size:14px}.rsq.ruim{background:#3a1e1e}
 .rmot{margin:0;padding-left:18px;font-size:14px;line-height:1.45}.rmot li{margin:3px 0}
 .rdica{border-color:#f2b705!important;background:linear-gradient(#2a2310,#141922)!important}
+
+.tpasso{display:block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#f2b705;opacity:.85}
+.tdica{font-size:13px;margin:3px 0 2px;color:#e9eef8}
+#abas button.guiaTar{position:relative;color:#f2b705!important}
+#abas button.guiaTar::after{content:'';position:absolute;top:6px;right:14%;width:9px;height:9px;border-radius:50%;background:#f2b705;box-shadow:0 0 0 0 #f2b705aa;animation:pulsoTar 1.4s infinite}
+@keyframes pulsoTar{0%{box-shadow:0 0 0 0 #f2b705aa}100%{box-shadow:0 0 0 10px #f2b70500}}
 </style></style>
 </head>
 <body>
@@ -385,7 +391,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v23 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v24 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -398,6 +404,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.f04327be.js"></script>
+<script src="jogo.812589e1.js"></script>
 </body>
 </html>
