@@ -447,6 +447,29 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .pnext{margin-top:10px;padding-top:8px;border-top:1px solid #ffffff14}
 .pnl{display:grid;grid-template-columns:minmax(0,1fr) auto 18px auto;gap:6px;align-items:center;font-size:14px;margin:2px 0}
 .pnl>span{color:#9aa6bb}.pnl i{font-style:normal;color:#9aa6bb;text-align:center}.pnl b.up{color:#3ddc6a}
+
+.fluxojan{position:fixed;inset:0;z-index:10000;background:#0b0f18f2;overflow:auto;padding:max(12px,env(safe-area-inset-top)) 12px max(16px,env(safe-area-inset-bottom))}
+.fluxobox{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.fabas{display:flex;gap:6px;flex-wrap:wrap}.fabas button{flex:1}
+.fluxsvg{width:100%;max-width:420px;height:auto;display:block;margin:6px auto}
+.fluxo{display:flex;flex-direction:column;align-items:center;gap:2px}
+.fcx{background:#1d2433;border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13.5px;text-align:center;width:100%;line-height:1.35}
+.fcx.fini{background:#2a2412;border-color:var(--ouro)}
+.fcx.ok{border-color:#3ddc6a}.fcx.ruim{border-color:#ff6b5a}
+.fseta{color:var(--ouro);font-weight:800;font-size:18px;line-height:1.1}.fseta small{font-size:11px;color:#aaa;font-weight:400}
+.fdec{width:100%;display:flex;flex-direction:column;align-items:center;gap:6px}
+.flos{width:min(78%,300px);aspect-ratio:3/1;display:flex;align-items:center;justify-content:center;background:#2b1d3a;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);padding:0 12%;text-align:center;font-weight:700;font-size:13px}
+.framos{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:6px;width:100%}
+.framo{display:flex;flex-direction:column;align-items:center;gap:3px}.framo>b{font-size:12px;color:#aaa}.framo>b.ok{color:#3ddc6a}.framo>b.ruim{color:#ff6b5a}
+.framo .fcx{flex:1;font-size:12.5px}
+.fsys{border-left:4px solid;padding:6px 8px;margin:6px 0;background:#1a2030;border-radius:8px;font-size:13.5px}
+.ftropa{display:flex;gap:10px;align-items:center;padding:6px 0;border-top:1px solid var(--line)}
+.ftropa>svg,.ftropa>img,.ftropa>span:first-child{width:56px;height:56px;flex:none;object-fit:contain}
+.cenafluxo{overflow:auto;align-items:flex-start!important;max-height:56vh}
+.cenafluxo .fluxsvg{max-height:50vh}
+.cenafluxo .card{margin:0;width:100%;text-align:left}
+.ftropa .tfig{width:60px;height:60px;flex:none;position:static;margin:0;display:flex;align-items:center;justify-content:center;font-size:28px}
+.ftropa .tfig img{width:100%;height:100%;object-fit:contain}
 </style></style>
 </head>
 <body>
@@ -456,7 +479,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v26 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v27 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -469,6 +492,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.355e8273.js"></script>
+<script src="jogo.5b16e7bf.js"></script>
 </body>
 </html>
