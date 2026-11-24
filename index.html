@@ -470,6 +470,32 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .cenafluxo .card{margin:0;width:100%;text-align:left}
 .ftropa .tfig{width:60px;height:60px;flex:none;position:static;margin:0;display:flex;align-items:center;justify-content:center;font-size:28px}
 .ftropa .tfig img{width:100%;height:100%;object-fit:contain}
+
+.expfixo{position:sticky;top:-2px;z-index:3;background:var(--card);box-shadow:0 6px 14px #000a;margin:6px 0 10px;border:1.5px solid #f2b70566}
+.expfixo .poder{opacity:1;color:#f2b705}
+.icst{width:18px;height:18px;vertical-align:-3px;display:inline-block}
+.locs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:8px 0}
+.loc{border-radius:10px;padding:6px;text-align:center;font-size:12.5px;font-weight:700;display:flex;flex-direction:column}
+.loc b{font-size:18px}
+.loc.casa{background:#163a22;color:#7ff0a0}.loc.marcha{background:#3a2a10;color:#ffc65a}.loc.treino{background:#14304d;color:#8cc8ff}
+.tabloc .lc.casa b{color:#3ddc6a}.tabloc .lc.marcha b{color:#ffb020}.tabloc .lc.treino b{color:#6cb6ff}
+.tabloc th.lc{font-size:12px}
+.card.marcha{border-left:4px solid #f2b705}
+.perigo2{border-color:#c0392b!important;color:#ff8a7a!important}
+.filas{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.fila{flex:1 1 30%;min-width:96px;border:1.5px dashed var(--line);border-radius:10px;padding:6px;font-size:12.5px;text-align:center;color:#8a93a6;display:flex;flex-direction:column;justify-content:center;min-height:46px}
+.fila.on{border-style:solid;border-color:#6cb6ff;color:#e8eefc;background:#14304d}
+.fila small{color:#9fc3ea}
+.fila.prem{border-color:#f2b705;color:#f2b705;background:#2a2412;font-weight:700}
+.popbar{display:flex;height:10px;border-radius:6px;overflow:hidden;background:#222a38;margin:6px 0}
+.popbar i{display:block;height:100%}
+.pfbars{gap:4px;justify-content:center;min-width:0}
+.hbar{display:grid;grid-template-columns:14px minmax(0,1fr) auto;align-items:center;gap:4px;font-family:"Alegreya Sans",system-ui;font-size:11px;line-height:1}
+.hbar i{font-style:normal;font-size:11px;text-align:center}
+.hbar b{display:block;height:7px;border-radius:4px;background:#ffffff1f;overflow:hidden;min-width:28px}
+.hbar u{display:block;height:100%;text-decoration:none}
+.hbar em{font-style:normal;font-weight:800;color:#f3efe6}
+.pfnome.pfbars{max-width:68px;width:68px}.hbar{gap:3px;grid-template-columns:12px minmax(0,1fr) auto}.hbar b{min-width:16px}.hbar em{font-size:10.5px}
 </style></style>
 </head>
 <body>
@@ -479,7 +505,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v27 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v29 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -492,6 +518,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.9b594889.js"></script>
+<script src="jogo.967e0293.js"></script>
 </body>
 </html>
