@@ -507,6 +507,16 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .nvst{font-size:12px;font-weight:800;border-radius:10px;padding:2px 8px;background:#222a38;color:#aaa}
 .nvst.ok{background:#163a22;color:#7ff0a0}.nvst.sinc{background:#14304d;color:#8cc8ff}.nvst.erro{background:#3a1616;color:#ff8a7a}
 .nvbox input{min-width:0}
+
+.conta .cbloco{border-top:1px solid var(--line);padding:10px 0 4px}
+.conta .cbloco:first-of-type{border-top:0;padding-top:4px}
+.dica{position:relative;display:inline-block}
+.dica>summary{list-style:none;cursor:pointer;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--ouro,#f2b705);color:var(--ouro,#f2b705);font:italic 800 14px/21px Georgia,serif;text-align:center}
+.dica>summary::-webkit-details-marker{display:none}
+.dica[open]>summary{background:var(--ouro,#f2b705);color:#1a1205}
+.balinfo{position:absolute;right:-6px;top:32px;width:min(280px,78vw);background:#fff8e1;color:#2a1d05;border-radius:12px;padding:10px 12px;font-size:13.5px;line-height:1.4;z-index:20;box-shadow:0 8px 24px #000a}
+.balinfo::before{content:"";position:absolute;right:12px;top:-7px;border:7px solid transparent;border-top:0;border-bottom-color:#fff8e1}
+.nvst{white-space:nowrap;flex:none}
 </style></style>
 </head>
 <body>
@@ -516,7 +526,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v32 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v33 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -529,6 +539,6 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.61e033a0.js"></script>
+<script src="jogo.222632a5.js"></script>
 </body>
 </html>
