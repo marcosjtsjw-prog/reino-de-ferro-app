@@ -163,7 +163,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .pfnome{font-family:Cinzel,Georgia,serif;font-size:14px;max-width:34vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .perfilcard .hcel{background:#0e121a;border:1px solid var(--line)}
 
-.basegrid{display:grid;grid-template-areas:"topo" "cid" "resto";gap:0;margin-top:8px}
+.basegrid{display:grid;grid-template-areas:"cid" "topo" "resto";gap:0;margin-top:8px}
 .btopo{grid-area:topo}.bresto{grid-area:resto}.cidbox{grid-area:cid;min-width:0}
 .cidwrap{overflow-x:auto;overflow-y:hidden;margin:0 calc(-1 * max(4vw,12px));-webkit-overflow-scrolling:touch;scrollbar-width:none;border-top:1px solid #f2b70544;border-bottom:1px solid #f2b70544;background:#07090f;cursor:grab}
 .cidwrap::-webkit-scrollbar{display:none}
@@ -582,6 +582,21 @@ button .ico{margin-right:.15em}
 .recfixo{position:sticky;top:0;z-index:3;background:#151a25f5;border-color:#f2b70566}
 .recs{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.recs span{display:flex;align-items:center;gap:4px}
 body:has(#modal:not([hidden])) .lianafab{display:none}
+
+
+.faixa{display:flex;align-items:center;gap:8px;padding:7px 9px;margin:6px 0;border-radius:12px;border:1px solid #f2b70566;background:linear-gradient(90deg,#2a1e10,#161b25)}
+.faixa .fico{font-size:24px;line-height:1;flex:none}.faixa .fico .ico{width:26px;height:26px}
+.faixa .ftx{flex:1;min-width:0}.faixa .ftx b{display:block;font-size:14px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.faixa .ftx small{display:block;font-size:12px;color:#cfc7b6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.faixa .ftx small .ico{width:13px;height:13px}
+.faixa.pronta{border-color:#3ddc6a;background:linear-gradient(90deg,#1f3416,#161b25)}
+.faixa.alerta.perigo{border-color:#e0523a;background:linear-gradient(90deg,#3a1410,#161b25)}.faixa.alerta.ok{border-color:#3ddc6a88}
+.faixa .fi{width:30px;min-height:30px;padding:0;border-radius:50%;background:#0b0e15;border:1.5px solid #f2b705aa;color:#f2b705;font-weight:800;font-style:italic;font-family:Georgia,serif;flex:none}
+.faixa .bpeq{flex:none;min-height:34px;padding:4px 12px}
+.infobal{position:fixed;z-index:60;background:#fff8e1;color:#2a1d05;border-radius:12px;padding:12px 34px 10px 12px;font-size:13.5px;line-height:1.4;box-shadow:0 10px 28px #000b}
+.infobal p{margin:6px 0 0}.infobal .mute{color:#6b5a3a}.infobal .mbx{position:absolute;right:4px;top:4px;width:28px;min-height:28px;padding:0;background:transparent;border:0;color:#6b5a3a;font-size:15px}
+.infobal .ico{color:#9a6a10}
+.infobal .mbx{box-shadow:none;border-radius:50%}
 </style></style>
 </head>
 <body>
@@ -604,6 +619,6 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.eba17dd9.js"></script>
+<script src="jogo.dc0397c2.js"></script>
 </body>
 </html>
