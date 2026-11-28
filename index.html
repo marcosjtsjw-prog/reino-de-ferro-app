@@ -528,7 +528,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .mundo{position:relative;border-radius:14px;overflow:hidden;border:1.5px solid #f2b70566;background:#1f4f78}
 #mundoCv{display:block;width:100%;height:min(62vh,560px);touch-action:none;cursor:grab}
 #mundoMini{position:absolute;right:8px;top:8px;width:96px;height:96px;border:1.5px solid #f2b705aa;border-radius:8px;background:#0b0e15;touch-action:none}
-.mbtns{position:absolute;left:8px;top:8px;display:flex;gap:8px;align-items:center}
+.mbtns{position:absolute;z-index:4;left:8px;top:8px;display:flex;gap:8px;align-items:center}
 .mbtns #mcoord{background:#0b0e15cc;border-radius:8px;padding:3px 7px;font-size:12px}
 .mleg{position:absolute;left:8px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 10px;background:#0b0e15cc;border-radius:8px;padding:4px 8px;font-size:11.5px;max-width:calc(100% - 16px)}
 .mleg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:0}
@@ -554,6 +554,34 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 .mold.sel{border-color:var(--ouro);box-shadow:0 0 0 2px #f2b70555}
 .mold.trava img{filter:grayscale(.6) brightness(.7)}
 .mclass{display:block;width:44px;height:56px;border:4px double #e2b23a;border-radius:3px}
+
+
+.mgiro{position:absolute;right:8px;top:112px;display:flex;flex-direction:column;gap:6px}
+.mgiro button{width:36px;min-height:36px;padding:0;font-size:17px}
+#mNorte{font-weight:800;color:#f2b705;transition:transform .15s}
+.mbalao{position:absolute;z-index:3;width:min(250px,calc(100% - 12px));background:#0f131ced;border:1.5px solid #f2b705aa;border-radius:12px;padding:9px 10px;box-shadow:0 6px 18px #0009}
+.mbalao .mbx{position:absolute;right:4px;top:4px;min-height:28px;width:28px;padding:0;background:transparent;border:0;color:#cfc7b6;font-size:15px}
+.mbalao .lin button{flex:1}
+
+
+.ico{width:1.15em;height:1.15em;vertical-align:-.22em;color:#e2b25a;display:inline-block;flex:none;overflow:visible}
+button .ico{margin-right:.15em}
+.tico .ico{width:44px;height:44px}
+.tporq{font-size:13px;color:#e9dcc0;margin:3px 0}
+.lianafab{position:fixed;right:12px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:6px;padding:4px 12px 4px 4px;border-radius:999px;background:#1a1408f2;border:1.5px solid #f2b705;box-shadow:0 6px 16px #000a;color:#f3efe6;font-weight:700;font-size:13px;min-height:44px}
+.lianafab img{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:50% 12%;background:#2a2015;border:1px solid #f2b70588}
+.lianatopo{display:flex;gap:10px;align-items:flex-start}
+.lianatopo img{width:86px;height:110px;object-fit:cover;object-position:50% 8%;border-radius:12px;border:1.5px solid #f2b70588;background:#2a2015;flex:none}
+.lianatopo p{margin:6px 0 0;font-size:14px}
+.plano{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid #ffffff12}.plano:last-child{border:0}
+.plano>div{flex:1}.plano .mute{font-size:12.5px}
+.pnum{width:24px;height:24px;border-radius:50%;background:#f2b705;color:#1a1205;font-weight:800;display:grid;place-items:center;font-size:13px;flex:none}
+.ativ{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid #ffffff12;cursor:pointer}.ativ:last-child{border:0}
+.ativ>div{flex:1}.ativ .mute{font-size:12.5px}.ativ.parado .mute{color:#ffb26b}
+.anv{width:26px;height:26px;border-radius:7px;background:#2a2015;border:1px solid #f2b70566;display:grid;place-items:center;font-weight:800;font-size:12.5px;flex:none}
+.recfixo{position:sticky;top:0;z-index:3;background:#151a25f5;border-color:#f2b70566}
+.recs{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.recs span{display:flex;align-items:center;gap:4px}
+body:has(#modal:not([hidden])) .lianafab{display:none}
 </style></style>
 </head>
 <body>
@@ -563,7 +591,7 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v41 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v43 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -576,6 +604,6 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.147d24c6.js"></script>
+<script src="jogo.ad5653cd.js"></script>
 </body>
 </html>
