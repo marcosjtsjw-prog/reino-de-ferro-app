@@ -597,6 +597,25 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 .infobal p{margin:6px 0 0}.infobal .mute{color:#6b5a3a}.infobal .mbx{position:absolute;right:4px;top:4px;width:28px;min-height:28px;padding:0;background:transparent;border:0;color:#6b5a3a;font-size:15px}
 .infobal .ico{color:#9a6a10}
 .infobal .mbx{box-shadow:none;border-radius:50%}
+
+
+.cidfull{grid-area:cid;position:relative;min-width:0}
+.basegrid.cheia{margin-top:0}
+.cheia .cidbox .visao{position:absolute;top:8px;left:8px;right:8px;z-index:4;margin:0;pointer-events:none}
+.cheia .cidbox .visao>*{pointer-events:auto}
+.cheia .cidbox .visao .clima,.cheia .cidbox .visao>span:first-child{background:#0b0e15d9}
+.cheia .cidwrap{border-top:0}
+.cidover{position:absolute;left:8px;right:8px;top:52px;z-index:4;pointer-events:none}
+.cidover>*{pointer-events:auto}
+.cidover .faixa{background:#121621e8;margin:0 0 6px;backdrop-filter:blur(2px)}
+.cidover .faixa.pronta{background:#18301ae8}.cidover .faixa.alerta.perigo{background:#3a1410e8}
+.cidover .card{background:#121621e8;margin:0 0 6px;padding:6px 10px}
+@media (min-width:900px){ .cidfull{position:sticky;top:70px} .cidover{top:56px} }
+.cheia .cidbox .visao{flex-wrap:nowrap;gap:6px}
+.cheia .cidbox .visao>:first-child{min-width:0;flex:1 1 auto;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:max-content}
+.cheia .cidbox .visao .vbts{display:flex;gap:4px;flex:none}
+.cheia .cidbox .visao .vbts button{min-height:30px;padding:3px 10px;font-size:13px}
+.cidover{top:48px}
 </style></style>
 </head>
 <body>
@@ -619,6 +638,6 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.dc0397c2.js"></script>
+<script src="jogo.e182a10d.js"></script>
 </body>
 </html>
