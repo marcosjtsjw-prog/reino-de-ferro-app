@@ -163,7 +163,7 @@ input{background:#0e121a;color:var(--ink);border:1px solid var(--line);border-ra
 .pfnome{font-family:Cinzel,Georgia,serif;font-size:14px;max-width:34vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .perfilcard .hcel{background:#0e121a;border:1px solid var(--line)}
 
-.basegrid{display:grid;grid-template-areas:"cid" "topo" "resto";gap:0;margin-top:8px}
+.basegrid{display:grid;grid-template-areas:"topo" "cid" "resto";gap:0;margin-top:8px}
 .btopo{grid-area:topo}.bresto{grid-area:resto}.cidbox{grid-area:cid;min-width:0}
 .cidwrap{overflow-x:auto;overflow-y:hidden;margin:0 calc(-1 * max(4vw,12px));-webkit-overflow-scrolling:touch;scrollbar-width:none;border-top:1px solid #f2b70544;border-bottom:1px solid #f2b70544;background:#07090f;cursor:grab}
 .cidwrap::-webkit-scrollbar{display:none}
@@ -616,6 +616,12 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 .cheia .cidbox .visao .vbts{display:flex;gap:4px;flex:none}
 .cheia .cidbox .visao .vbts button{min-height:30px;padding:3px 10px;font-size:13px}
 .cidover{top:48px}
+
+
+.basegrid.cheia{grid-template-areas:"cid"}
+.pdot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#e0523a;margin-left:5px;vertical-align:1px;box-shadow:0 0 0 2px #0b0e15}
+.vbts button{position:relative}
+@media (min-width:900px){ .basegrid.cheia{grid-template-columns:minmax(0,1fr)} }
 </style></style>
 </head>
 <body>
@@ -638,6 +644,6 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.e182a10d.js"></script>
+<script src="jogo.9779c24e.js"></script>
 </body>
 </html>
