@@ -546,6 +546,14 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 .cropjan{position:relative;width:min(72vw,260px);aspect-ratio:4/5;overflow:hidden;border-radius:6px;background:#0b0e15;touch-action:none;cursor:grab;user-select:none}
 .cropjan img{position:absolute;max-width:none;pointer-events:none;user-select:none}
 .cropjan .cropMold,.cropjan>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+
+.molds{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:6px;margin-top:6px}
+.mold{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 4px;border:1.5px solid var(--line);border-radius:10px;background:#1a2030;min-height:0;text-align:center}
+.mold img{width:56px;height:70px;object-fit:contain}
+.mold small{font-size:11px;line-height:1.2}
+.mold.sel{border-color:var(--ouro);box-shadow:0 0 0 2px #f2b70555}
+.mold.trava img{filter:grayscale(.6) brightness(.7)}
+.mclass{display:block;width:44px;height:56px;border:4px double #e2b23a;border-radius:3px}
 </style></style>
 </head>
 <body>
@@ -555,7 +563,7 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 <path d="M256 160 L330 188 L330 262 C330 312 296 342 256 360 C216 342 182 312 182 262 L182 188 Z" fill="#e0352b" stroke="#fff3c4" stroke-width="10" stroke-linejoin="round"/>
 <path d="M214 236 l18 -26 l24 20 l24 -20 l18 26 l-8 42 h-68 z" fill="#f2b705" stroke="#8a5a00" stroke-width="5" stroke-linejoin="round"/>
 
-</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v39 · © Marcos</small></div>
+</svg></div><h1>Reino de Ferro</h1><p>Valdora precisa de engenheiros</p><div class="carga"><i></i></div><button data-acao="jogar">Jogar</button><small>v40 · © Marcos</small></div>
 <header class="topo"><button class="perfil" id="perfilTopo" data-acao="perfil" aria-label="Perfil do Comandante"></button><div class="recs" id="recs"></div></header>
 <main id="tela"></main>
 <nav class="abas" id="abas">
@@ -568,6 +576,6 @@ input.rg{touch-action:none;width:100%;height:32px;cursor:pointer}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.ddf3a08e.js"></script>
+<script src="jogo.e308c4fe.js"></script>
 </body>
 </html>
