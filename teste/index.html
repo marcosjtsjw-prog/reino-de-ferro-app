@@ -622,6 +622,16 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 .pdot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#e0523a;margin-left:5px;vertical-align:1px;box-shadow:0 0 0 2px #0b0e15}
 .vbts button{position:relative}
 @media (min-width:900px){ .basegrid.cheia{grid-template-columns:minmax(0,1fr)} }
+
+.pgrade{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.ptile{flex-direction:row!important;align-items:center!important;gap:6px;padding:5px 8px 5px 4px!important;border-radius:12px!important;min-height:64px;text-align:left}
+.ptile .pfig{flex:0 0 58px;width:58px}
+.ptile .pfig img{height:54px;width:58px}
+.ptile .pfig svg{height:44px;width:58px;border-radius:8px}
+.ptile .pinfo{align-items:flex-start!important;min-width:0;flex:1}
+.ptile .pinfo b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.ptile .pinfo small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+@media(min-width:700px){.pgrade{grid-template-columns:repeat(3,minmax(0,1fr))}.ptile .pfig{flex-basis:72px;width:72px}.ptile .pfig img{height:66px;width:72px}}
 </style></style>
 </head>
 <body>
