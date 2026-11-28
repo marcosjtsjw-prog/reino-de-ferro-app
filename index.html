@@ -632,6 +632,14 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 .ptile .pinfo b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .ptile .pinfo small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 @media(min-width:700px){.pgrade{grid-template-columns:repeat(3,minmax(0,1fr))}.ptile .pfig{flex-basis:72px;width:72px}.ptile .pfig img{height:66px;width:72px}}
+
+
+@media(max-width:899px){
+  .cheia .cidwrap{height:calc(100dvh - var(--hud-h,110px) - var(--nav-h,70px));overflow:auto;overscroll-behavior:contain;touch-action:pan-x pan-y}
+  .cheia .cidwrap::-webkit-scrollbar{display:none}
+}
+.lianafab{transition:padding .2s,gap .2s}
+.lianafab.mini{padding:4px;gap:0}.lianafab.mini span{display:none}
 </style></style>
 </head>
 <body>
@@ -654,6 +662,6 @@ body:has(#modal:not([hidden])) .lianafab{display:none}
 </nav>
 <div class="modal" id="modal" hidden><div class="caixa" id="caixa" role="dialog" aria-modal="true"></div></div>
 <div class="toast" id="toast"></div>
-<script src="jogo.9779c24e.js"></script>
+<script src="jogo.ce2e47be.js"></script>
 </body>
 </html>
